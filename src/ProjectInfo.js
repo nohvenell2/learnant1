@@ -16,12 +16,12 @@ icon 을 더 추가하고 싶으면 SiderMenu 에서 수정
 const skProject = 
 [
     {
-    key : 'project1',
+    key : 'Project1',
     name: 'Project1',
     icon: 'BulbOutlined',
     },
     {
-    key : 'project2',
+    key : 'Project2',
     name: 'Project2',
     icon: 'BulbOutlined',
     },
@@ -35,12 +35,12 @@ const skProject =
 const dkProject = 
 [
     {
-        key : 'project3',
+        key : 'Project3',
         name: 'Project3',
         icon: 'BulbOutlined',
     },
     {
-        key : 'project4',
+        key : 'Project4',
         name: 'Project4',
         icon: 'BulbOutlined',
     },
