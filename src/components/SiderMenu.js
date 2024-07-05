@@ -1,10 +1,10 @@
 import React from 'react';
-import { HomeOutlined , UserOutlined } from '@ant-design/icons';
+import { HomeOutlined , UserOutlined, BulbOutlined} from '@ant-design/icons';
 import { Menu } from 'antd';
 import { useNavigate } from 'react-router-dom';
 const items = [
   {
-    key: 'home',
+    key: '',
     label: 'Home',
     icon: <HomeOutlined />,
   },
