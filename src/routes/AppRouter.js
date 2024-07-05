@@ -6,6 +6,7 @@ import Asset2 from '../pages/Asset2';
 import Asset3 from '../pages/Asset3';
 import Asset4 from '../pages/Asset4';
 import NotFound from '../pages/NotFound';
+import SearchBar from '../pages/SearchBar';
 
 const AppRouter = () => {
   return (
@@ -16,6 +17,7 @@ const AppRouter = () => {
       <Route path="/Asset2" element={<Asset2 />} />
       <Route path="/Asset3" element={<Asset3 />} />
       <Route path="/Asset4" element={<Asset4 />} />
+      <Route path="/SearchBar" element={<SearchBar />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>  
   );

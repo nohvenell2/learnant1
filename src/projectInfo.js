@@ -30,7 +30,12 @@ const projectInfo = [
           key:'Asset2',
           label:'Asset2',
           icon:<BulbOutlined />,
-        }
+        },
+        {
+          key:'SearchBar',
+          label:'SearchBar',
+          icon:<BulbOutlined />,
+        },
       ],
     },
     {
