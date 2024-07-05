@@ -1,29 +1,23 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
-//import About from '../pages/About';
-import SkAsset1 from '../pages/SK/Asset1';
-import SkAsset2 from '../pages/SK/Asset2';
-import DkAsset1 from '../pages/DK/Asset1';
-import DkAsset2 from '../pages/DK/Asset2';
+import Asset1 from '../pages/Asset1';
+import Asset2 from '../pages/Asset2';
+import Asset3 from '../pages/Asset3';
+import Asset4 from '../pages/Asset4';
 import NotFound from '../pages/NotFound';
 
 const AppRouter = () => {
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        {/*About
-          <Route path="/about" component={About} />
-        */}
-        {/* Assets */}
-        <Route path="/SK/Asset1" element={<SkAsset1 />} />
-        <Route path="/SK/Asset2" element={<SkAsset2 />} />
-        <Route path="/DK/Asset1" element={<DkAsset1 />} />
-        <Route path="/DK/Asset2" element={<DkAsset2 />} />
-        <Route path="/*" element={<NotFound />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      {/* Assets */}
+      <Route path="/Asset1" element={<Asset1 />} />
+      <Route path="/Asset2" element={<Asset2 />} />
+      <Route path="/Asset3" element={<Asset3 />} />
+      <Route path="/Asset4" element={<Asset4 />} />
+      <Route path="/*" element={<NotFound />} />
+    </Routes>  
   );
 };
 
