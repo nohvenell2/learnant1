@@ -1,4 +1,3 @@
-import {skProject, dkProject} from './ProjectInfo'
 import React from 'react';
 import AppRouter from './routes/AppRouter'
 import SiderMenu from './components/SiderMenu';
@@ -7,7 +6,6 @@ import { Layout } from 'antd';
 const { Header, Content, Footer, Sider } = Layout;
 
 const App=()=>{
-  console.log(skProject.key);
   return (
     <div>
       {/*App.js 에서 실제로 구현할 코드 */}
