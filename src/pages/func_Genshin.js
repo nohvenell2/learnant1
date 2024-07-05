@@ -1,14 +1,14 @@
-function calculateDamage() {
+function calculateDamage(DamageSource) {
     // Get values from the form
-    const baseAttack = parseFloat(document.getElementById('baseAttack').value);
-    const attackPercentage = parseFloat(document.getElementById('attackPercentage').value) / 100;
-    const flatAttack = parseFloat(document.getElementById('flatAttack').value);
-    const damageBonus = parseFloat(document.getElementById('damageBonus').value) / 100;
-    const critRate = parseFloat(document.getElementById('critRate').value) / 100;
-    const critDamage = parseFloat(document.getElementById('critDamage').value) / 100;
-    const enemyResistance = parseFloat(document.getElementById('enemyResistance').value) / 100;
-    const reactionMultiplier = parseFloat(document.getElementById('reactionMultiplier').value);
-    const elementalMastery = parseFloat(document.getElementById('elementalMastery').value);
+    const baseAttack = DamageSource[0];
+    const attackPercentage = DamageSource[1] / 100;
+    const flatAttack = DamageSource[2];
+    const damageBonus = DamageSource[3] / 100;
+    const critRate = DamageSource[4] / 100;
+    const critDamage = DamageSource[5] / 100;
+    const enemyResistance = DamageSource[6] / 100;
+    const reactionMultiplier = DamageSource[7];
+    const elementalMastery = DamageSource[8];
 
     // Calculate attack power
     const attackPower = baseAttack * (1 + attackPercentage) + flatAttack;
@@ -29,7 +29,7 @@ function calculateDamage() {
 
     // Calculate final damage
     const finalDamage = attackPower * (1 + damageBonus) * critMultiplier * resistanceMultiplier * reactionMultiplier * (1 + elementalMasteryBonus);
-
     // Display result
-    document.getElementById('result').innerText = finalDamage.toFixed(2);
+    return finalDamage;
 }
+export default calculateDamage;

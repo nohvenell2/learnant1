@@ -5,10 +5,8 @@ function SearchBar() {
   const handleSearch = () => {
     // 검색 버튼을 눌렀을 때의 동작을 여기에 작성합니다.
     const GoogleKey = process.env.REACT_APP_API_GOOGLEKEY;
-    console.log(GoogleKey);
     const GoogleId = process.env.REACT_APP_API_GOOGLEID;
     const GoogleApi = `https://www.googleapis.com/customsearch/v1?q=${query}&key=${GoogleKey}&cx=${GoogleId}`;
-    console.log(GoogleApi);
     fetch(GoogleApi)    
     .then(response => {
         if (!response.ok) {

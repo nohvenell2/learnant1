@@ -7,7 +7,6 @@ const items = projectInfo;
 const SiderMenu = () => {
   const navigate= useNavigate();
   const onClick = (e) => {
-    console.log('click ', e.key);
     navigate(`/${e.key}`);
   };
   return (
