@@ -50,7 +50,7 @@ const SiderMenu = () => {
   const navigate= useNavigate();
   const onClick = (e) => {
     console.log('click ', e.key);
-
+    navigate(`/${e.key}`);
   };
   return (
     <div style={{ display:'flex', height: '100vh',}}>
