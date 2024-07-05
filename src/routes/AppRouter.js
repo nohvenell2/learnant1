@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import Asset1 from '../pages/Asset1';
@@ -7,10 +7,13 @@ import Asset3 from '../pages/Asset3';
 import Asset4 from '../pages/Asset4';
 import NotFound from '../pages/NotFound';
 import SearchBar from '../pages/SearchBar';
-import Genshin from '../pages/GenshinDamageCalculator'
-import About from '../pages/About'
-
+import Genshin from '../pages/Genshin';
+import About from '../pages/About';
+import Temp from '../pages/Temp';
+//const Pages = ['Asset1','Asset2','Asset3','Asset4','SearchBar','Genshin','Home','About'];
+//const importComponent = (name) => React.lazy(()=>import(`/pages/${name}`));
 const AppRouter = () => {
+  console.log('i am loaded');
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
@@ -22,6 +25,7 @@ const AppRouter = () => {
       <Route path="/SearchBar" element={<SearchBar />} />
       <Route path="/Genshin" element={<Genshin />} />
       <Route path="/About" element={<About />} />
+      <Route path="/Temp" element={<Temp />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>  
   );

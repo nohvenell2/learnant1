@@ -2,7 +2,7 @@ import React,{useState} from "react"
 import {Form} from 'antd';
 import InputRealNumber from "../components/InputRealNumber";
 import calculateDamage from "./func_Genshin";
-const GenshinDamageCalculator=()=>{
+const Genshin=()=>{
     const [BA,setBA]=useState(100);
     const [AP,setAP]=useState(100);
     const [FA,setFA]=useState(100);
@@ -54,4 +54,4 @@ const GenshinDamageCalculator=()=>{
         </div>
     )
 }
-export default GenshinDamageCalculator;
+export default Genshin;
