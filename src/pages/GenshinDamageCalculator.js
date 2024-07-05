@@ -2,27 +2,15 @@ import React,{useState} from "react"
 import {Form} from 'antd';
 import InputRealNumber from "../components/InputRealNumber";
 import calculateDamage from "./func_Genshin";
-const inputVal = {
-    BA:0,   //Base Attack
-    AP:0,   //Attack Percentage %
-    FA:0,   //Flat Attack
-    DB:0,   //Damage Bonus %
-    CR:0,   //Crit Rate %
-    CD:0,   //Crit Damage %
-    ER:0,   //Enemy Resistance %
-    RM:0,   //Reaction Multiplier
-    EM:0,   //Elemental Mastery
-}
 const GenshinDamageCalculator=()=>{
-    const [temp,setTemp]=useState(0);
-    const [BA,setBA]=useState(0);
-    const [AP,setAP]=useState(0);
-    const [FA,setFA]=useState(0);
+    const [BA,setBA]=useState(100);
+    const [AP,setAP]=useState(100);
+    const [FA,setFA]=useState(100);
     const [DB,setDB]=useState(0);
     const [CR,setCR]=useState(0);
     const [CD,setCD]=useState(100);
     const [ER,setER]=useState(0);
-    const [RM,setRM]=useState(0);
+    const [RM,setRM]=useState(100);
     const [EM,setEM]=useState(0);
     const resultDamage=calculateDamage([BA,AP,FA,DB,CR,CD,ER,RM,EM]);
 
