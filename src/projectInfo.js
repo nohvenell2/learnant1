@@ -55,6 +55,11 @@ const projectInfo = [
           key:'Asset4',
           label:'Asset4',
           icon:<BulbOutlined />,
+        },
+        {
+          key:'Genshin',
+          label:'Genshin',
+          icon:<BulbOutlined />,
         }
       ],
     },
