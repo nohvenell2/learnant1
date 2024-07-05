@@ -11,13 +11,13 @@ const App=()=>{
         <Header style={{display:'flex', alignItems:'center', color: 'white'}}><h1>Project</h1></Header>
         <Layout>
           <Sider><SiderMenu /></Sider>
-          <Content>
-            <div style={{padding: 80,minHeight: 360,}}>
+          <Content style={{display: 'flex'}}>
+            <div style={{paddingLeft:30, minHeight: 200,}}>
               <AppRouter />
             </div>
           </Content>
-          <Footer>footer</Footer>
         </Layout>
+        {/*<Footer>footer</Footer>*/}
       </Layout>
     </div>
   )
