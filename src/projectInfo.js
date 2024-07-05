@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeOutlined , UserOutlined, BulbOutlined } from '@ant-design/icons';
+import { HomeOutlined , UserOutlined, BulbOutlined, InfoCircleOutlined } from '@ant-design/icons';
 /**
  * SideMenu 의 Menubar 로 연동되는 project 정보 
  * @param key 사이트 추가주소로 사용되는 이름
@@ -62,6 +62,11 @@ const projectInfo = [
           icon:<BulbOutlined />,
         }
       ],
+    },
+    {
+      key: 'About',
+      label: 'About',
+      icon: <InfoCircleOutlined />,
     },
     
   ];

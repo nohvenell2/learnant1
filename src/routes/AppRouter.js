@@ -8,6 +8,7 @@ import Asset4 from '../pages/Asset4';
 import NotFound from '../pages/NotFound';
 import SearchBar from '../pages/SearchBar';
 import Genshin from '../pages/GenshinDamageCalculator'
+import About from '../pages/About'
 
 const AppRouter = () => {
   return (
@@ -20,6 +21,7 @@ const AppRouter = () => {
       <Route path="/Asset4" element={<Asset4 />} />
       <Route path="/SearchBar" element={<SearchBar />} />
       <Route path="/Genshin" element={<Genshin />} />
+      <Route path="/About" element={<About />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>  
   );

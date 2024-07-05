@@ -9,7 +9,6 @@ const InputRealNumber = (props) => {
     if (reg.test(inputValue) || inputValue === '' || inputValue === '-') {
       onChange(inputValue);
     }
-    console.log(inputValue);
   };
 
   // '.' at the end or only '-' in the input box.

@@ -20,7 +20,7 @@ const GenshinDamageCalculator=()=>{
     const [FA,setFA]=useState(0);
     const [DB,setDB]=useState(0);
     const [CR,setCR]=useState(0);
-    const [CD,setCD]=useState(0);
+    const [CD,setCD]=useState(100);
     const [ER,setER]=useState(0);
     const [RM,setRM]=useState(0);
     const [EM,setEM]=useState(0);
@@ -62,7 +62,7 @@ const GenshinDamageCalculator=()=>{
                 <InputRealNumber value={EM} onChange={setEM} />
             </Form.Item>
             </Form>
-            <h2>Calculated Damage: {resultDamage}</h2>       
+            <h2>Calculated Damage: {resultDamage.toFixed(2)}</h2>       
         </div>
     )
 }
