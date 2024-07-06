@@ -8,18 +8,16 @@ const App=()=>{
   return (
     <div>
       {/*App.js 에서 실제로 구현할 코드 */}
-      <Layout>
+      <Layout style={{height: '100vh'}}>
         <Link to="/">
-          <Header style={{display:'flex', alignItems:'center', color: 'white'}}>
+          <Header style={{display:'flex', alignItems:'center', color: 'white',}}>
             <h1>Project</h1>
           </Header>
         </Link>
         <Layout>
-          <Sider><SiderMenu /></Sider>
-          <Content style={{display: 'flex'}}>
-            <div style={{paddingLeft:30, minHeight: 200,}}>
-              <AppRouter />
-            </div>
+          <Sider><SiderMenu style={{height: '100vh'}}/></Sider>
+          <Content>
+             <AppRouter />
           </Content>
         </Layout>
         {/*<Footer>footer</Footer>*/}

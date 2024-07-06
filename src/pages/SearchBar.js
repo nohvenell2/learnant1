@@ -29,7 +29,7 @@ function SearchBar() {
   };
 
   return (
-    <div>
+    <div style={{paddingLeft:'80px'}}>
       <h1>Search from Namu with Google</h1>
       <div style={styles.container}>
         <input

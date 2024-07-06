@@ -10,8 +10,8 @@ const SiderMenu = () => {
     navigate(`/${e.key}`);
   };
   return (
-    <div style={{ display:'flex', height: '100vh',}}>
-      <Menu
+    <div style={{ display:'flex', height:'100%'}}>
+      <Menu 
         onClick={onClick}
         style={{
           width: 256,

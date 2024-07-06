@@ -1,7 +1,7 @@
 import React, {Suspense} from 'react';
 import Home from '../pages/Home'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-const Pages = ['Asset1','Asset2','Asset3','Asset4','SearchBar','Genshin','Home','About'];
+const Pages = ['TempCarousel','Asset2','Asset3','Asset4','SearchBar','Genshin','Home','About','TempForm1'];
 const pageComponent = (name) => React.lazy(()=>import(`../pages/${name}`));
   const MyRoutes = Pages.map((page,i)=>{
     const path = '/'+page;

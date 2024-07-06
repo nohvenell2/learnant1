@@ -22,13 +22,13 @@ const projectInfo = [
       icon: <UserOutlined />,
       children:[
         {
-          key:'Asset1',
-          label:'Asset1',
+          key:'TempCarousel',
+          label:'Carousel',
           icon:<BulbOutlined />,
         },
         {
-          key:'Asset2',
-          label:'Asset2',
+          key:'TempForm1',
+          label:'Form',
           icon:<BulbOutlined />,
         },
         {

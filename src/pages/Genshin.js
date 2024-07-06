@@ -15,7 +15,7 @@ const Genshin=()=>{
     const resultDamage=calculateDamage([BA,AP,FA,DB,CR,CD,ER,RM,EM]);
 
     return (
-        <div>
+        <div style={{paddingLeft:'80px'}}>
             <h1>Genshin Impact Damage Calculator</h1>
             <Form
                 labelCol={{ span: 8 }}
